@@ -1,0 +1,93 @@
+/*CARREGANDO A FONTE OPEN SANS do google fonts*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+/*Setando para que todo o sistema utilize a fonte Open Sans*/
+*{
+	font-family: "Open Sans";
+}
+
+/*CSS Reset - Retirar os valores predefinidos pelo browser*/
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+h1,
+h2,
+h3,
+h4{
+	margin: 0px;
+}
+body{
+	background-color: gray;
+}
+
+
+/*CARTÃO*/
+.card{
+	/*LARGURA*/
+	width: 250px;
+	background: white;
+
+	/* offsetx offsety desfoque */
+	box-shadow: 0px 0px 10px #000;
+	/*
+		FAZER A TRANSIÇÃO DE UMA PROPRIEDADE PARA OUTRA
+			valor que vai ter a transição,
+			quantos segundos vai durar animação,
+			quanto segundos de delay tem animação 
+	*/
+	transition: transform 0.5s 0s ease-in;
+}
+
+/*:hover -> Define o estilo quando o mouse estiver sobre o cartão*/
+.card:hover{
+	/*AUMENTE DE TAMANHO*/
+	transform: scale(1.1);
+}
+
+/*Cabeçalho do cartão*/
+.card header{
+	/*Cor de fundo*/
+	background: #FD5150;
+	/*COR DA LETRA*/
+	color: white;
+
+	/*GORDURA*/
+	padding: 10px;
+}
+.card .content ul{
+	/*Retira os bullets -> As bolinhas na lateral*/
+	list-style-type: none;
+}
+.card .content ul li{
+	/*LEFT,TOP,RIGHT,BOTTOM (10px) -> TODOS OS LADOS*/
+	padding: 10px;
+	/*TOP E BOTTOM(5px), LEFT RIGHT(10px)*/
+	padding: 5px 10px;
+}
+
+.card .content{
+	/*Gordurinha do elemento*/
+	padding: 10px;
+}
+
+.card .content .btn{
+	padding: 20px;
+	color: white;
+	background-color: #FD5150;
+	/*Mostrar em forma de bloco, pois o padrão da tag <a> é inline*/
+	display: block;
+	/*Alinhar o conteúdo no meio*/
+	margin: 0px auto;
+	/*Colocando a largura do elemento como 100%*/
+	width: 100%;
+	/*Fazendo com que o padding não seja com a largura! -> Se não explode o botão para fora!*/
+	box-sizing: border-box;
+	/*Retirando o sublinhado*/
+	text-decoration: none;
+	/*Alinhando o texto no meio*/
+	text-align: center;
+	/*Fazendo as bordas arredondadas*/
+	border-radius: 5px;
+}
+
