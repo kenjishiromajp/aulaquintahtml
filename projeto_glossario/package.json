@@ -1,0 +1,11 @@
+{
+  "name": "exercicio_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "browser-sync start --server --files css/*.css,*.html, js/*.js "
+  },
+  "author": "7",
+  "license": "ISC"
+}
