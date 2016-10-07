@@ -1,0 +1,24 @@
+/*CARREGANDO A FONTE OPEN SANS do google fonts*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+/*Setando para que todo o sistema utilize a fonte Open Sans*/
+*{
+	font-family: "Open Sans";
+}
+
+/*CSS Reset - Retirar os valores predefinidos pelo browser*/
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+h1,
+h2,
+h3,
+h4{
+	margin: 0px;
+}
+body{
+	background-color: #eaeaea;
+	/*GORDURA EM CIMA para compensar o menu*/
+	padding-top: 80px;
+}

@@ -1,0 +1,29 @@
+#sidebar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	background: white;
+	width: 240px;
+	box-shadow: 2px 0px 10px #6d6d6d;
+}
+
+#sidebar header{
+	background: rgba(33, 150, 243, 1);
+	padding: 20px;
+}
+#sidebar header h1{
+	color: white;
+}
+
+#sidebar .content ul li a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	transition: all 1s 0s ease-in;
+}
+
+#sidebar .content ul li a:hover{
+	background: rgba(33, 150, 243, 1);
+	color: white;
+}

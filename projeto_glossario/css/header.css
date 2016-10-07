@@ -1,0 +1,54 @@
+/*header*/
+#primary-nav{
+	height: 70px;
+	width: 100%;
+	background: rgba(33, 150, 243, 0.85);
+
+	/*FAZ COM QUE O ELEMENTO FIXE EM UMA POSIÇÃO*/
+	position: fixed;
+	/*Define as coordenadas*/
+	top: 0px;
+	left: 0px;
+
+	/*COMEÇANDO O FLEXBOX*/
+	display: flex;
+	/*Distribuir o espaçamento no meio*/
+	justify-content: space-between;
+	/*
+	 Xoffset -> quanto desloca para direita
+	 yoffset -> quanto desloca para baixo
+	 blur -> Quanto a sombra se dissolve
+	 color -> Cor da sombra
+	*/
+	box-shadow: 0px 0px 10px #6d6d6d;
+}
+
+#primary-nav *{
+	color: white;
+}
+
+#primary-nav nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	align-items: stretch;
+	height: 100%;
+}
+#primary-nav nav ul li a{
+	/*ALTURA DA LINHA DO TEXTO*/
+	line-height: 70px;
+	display: block;
+	/*
+		BOTA A GORDURA DO LADO ESQUERDO
+		E DIREITO para não grudar
+	*/
+	padding-left: 10px;
+	padding-right: 10px;
+	/*TIRA O SUBLINHADO*/
+	text-decoration: none;
+}
+
+#primary-nav h2{
+	line-height: 70px;
+	padding-left: 20px;
+}
