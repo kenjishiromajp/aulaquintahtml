@@ -2,7 +2,8 @@
 #primary-nav{
 	height: 70px;
 	width: 100%;
-	background: rgba(33, 150, 243, 0.85);
+	background: rgba($corDaMarca, 0.85);
+	// background: rgba(33, 150, 243, 0.85);
 
 	/*FAZ COM QUE O ELEMENTO FIXE EM UMA POSIÇÃO*/
 	position: fixed;

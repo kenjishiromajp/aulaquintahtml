@@ -6,6 +6,12 @@
 	background: white;
 	width: 240px;
 	box-shadow: 2px 0px 10px #6d6d6d;
+	transform: translateX(-240px);
+	transition: transform 0.5s 0s ease-in;
+}
+
+#sidebar.active{
+	transform: translateX(0px);	
 }
 
 #sidebar header{

@@ -4,8 +4,12 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "browser-sync start --server --files css/*.css,*.html, js/*.js "
+    "start": "browser-sync start --server --files css/*.css,*.html, js/*.js ",
+    "sass": "sass --watch sass:css"
   },
   "author": "7",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.17.3"
+  }
 }

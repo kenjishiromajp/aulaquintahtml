@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*CARREGANDO A FONTE OPEN SANS do google fonts*/
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+/*Setando para que todo o sistema utilize a fonte Open Sans*/
+* {
+  font-family: "Open Sans"; }
+
+/*CSS Reset - Retirar os valores predefinidos pelo browser*/
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px; }
+
+body {
+  background-color: #eaeaea;
+  /*GORDURA EM CIMA para compensar o menu*/
+  padding-top: 80px; }
+
+/*header*/
+#primary-nav {
+  height: 70px;
+  width: 100%;
+  background: rgba(33, 150, 243, 0.85);
+  /*FAZ COM QUE O ELEMENTO FIXE EM UMA POSI├ç├âO*/
+  position: fixed;
+  /*Define as coordenadas*/
+  top: 0px;
+  left: 0px;
+  /*COME├çANDO O FLEXBOX*/
+  display: flex;
+  /*Distribuir o espa├ºamento no meio*/
+  justify-content: space-between;
+  /*
+   Xoffset -> quanto desloca para direita
+   yoffset -> quanto desloca para baixo
+   blur -> Quanto a sombra se dissolve
+   color -> Cor da sombra
+  */
+  box-shadow: 0px 0px 10px #6d6d6d; }
+
+#primary-nav * {
+  color: white; }
+
+#primary-nav nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: stretch;
+  height: 100%; }
+
+#primary-nav nav ul li a {
+  /*ALTURA DA LINHA DO TEXTO*/
+  line-height: 70px;
+  display: block;
+  /*
+  	BOTA A GORDURA DO LADO ESQUERDO
+  	E DIREITO para n├úo grudar
+  */
+  padding-left: 10px;
+  padding-right: 10px;
+  /*TIRA O SUBLINHADO*/
+  text-decoration: none; }
+
+#primary-nav h2 {
+  line-height: 70px;
+  padding-left: 20px; }
+
+/*CART├âO*/
+.card {
+  /*LARGURA*/
+  width: 250px;
+  background: white;
+  /* offsetx offsety desfoque */
+  box-shadow: 0px 0px 10px #000;
+  /*
+  	FAZER A TRANSI├ç├âO DE UMA PROPRIEDADE PARA OUTRA
+  		valor que vai ter a transi├º├úo,
+  		quantos segundos vai durar anima├º├úo,
+  		quanto segundos de delay tem anima├º├úo 
+  */
+  transition: transform 0.5s 0s ease-in; }
+
+/*:hover -> Define o estilo quando o mouse estiver sobre o cart├úo*/
+.card:hover {
+  /*AUMENTE DE TAMANHO*/
+  transform: scale(1.1); }
+
+/*Cabe├ºalho do cart├úo*/
+.card header {
+  /*Cor de fundo*/
+  background: #FD5150;
+  /*COR DA LETRA*/
+  color: white;
+  /*GORDURA*/
+  padding: 10px; }
+
+.card .content ul {
+  /*Retira os bullets -> As bolinhas na lateral*/
+  list-style-type: none; }
+
+.card .content ul li {
+  /*LEFT,TOP,RIGHT,BOTTOM (10px) -> TODOS OS LADOS*/
+  padding: 10px;
+  /*TOP E BOTTOM(5px), LEFT RIGHT(10px)*/
+  padding: 5px 10px; }
+
+.card .content {
+  /*Gordurinha do elemento*/
+  padding: 10px; }
+
+.card .content .btn {
+  padding: 20px;
+  color: white;
+  background-color: #FD5150;
+  /*Mostrar em forma de bloco, pois o padr├úo da tag <a> ├® inline*/
+  display: block;
+  /*Alinhar o conte├║do no meio*/
+  margin: 0px auto;
+  /*Colocando a largura do elemento como 100%*/
+  width: 100%;
+  /*Fazendo com que o padding n├úo seja com a largura! -> Se n├úo explode o bot├úo para fora!*/
+  box-sizing: border-box;
+  /*Retirando o sublinhado*/
+  text-decoration: none;
+  /*Alinhando o texto no meio*/
+  text-align: center;
+  /*Fazendo as bordas arredondadas*/
+  border-radius: 5px; }
+
+#sidebar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  background: white;
+  width: 240px;
+  box-shadow: 2px 0px 10px #6d6d6d;
+  transform: translateX(-240px);
+  transition: transform 0.5s 0s ease-in; }
+
+#sidebar.active {
+  transform: translateX(0px); }
+
+#sidebar header {
+  background: #2196f3;
+  padding: 20px; }
+
+#sidebar header h1 {
+  color: white; }
+
+#sidebar .content ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 1s 0s ease-in; }
+
+#sidebar .content ul li a:hover {
+  background: #2196f3;
+  color: white; }
+
+.btn {
+  border-radius: 4px;
+  height: 70px;
+  color: white;
+  min-width: 200px;
+  display: block;
+  text-align: center;
+  background: #2196f3; }
+
+table {
+  width: 100%; }
+  table thead tr td {
+    background: #2196f3;
+    color: white; }
+  table tbody tr:nth-child(even) td {
+    background: #e3f2fd; }
+
+.btn.btn-danger {
+  background: red; }
+
+.btn.green {
+  color: green; }
+
+.btn.red {
+  color: red; }
+
+.btn.blue {
+  color: blue; }
+
+.btn.pink {
+  color: pink; }
+
+.botao {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.sidebar {
+  -webkit-transition: all 0s 1s ease-in;
+  -moz-transition: all 0s 1s ease-in;
+  -ms-transition: all 0s 1s ease-in;
+  -o-transition: all 0s 1s ease-in;
+  transition: all 0s 1s ease-in; }
+
+/*# sourceMappingURL=styles.css.map */

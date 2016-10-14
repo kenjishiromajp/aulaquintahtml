@@ -1,0 +1,45 @@
+$corDaMarca: #2196f3;
+@import "components/_standard.scss";
+@import "components/_header.scss";
+@import "components/_pricingtables.scss";
+@import "components/_sidebar.scss";
+@import "components/_button.scss";
+@import "components/_table.scss";
+
+
+.btn{
+
+}
+
+$botao: (name: "danger", color: "white", background: "red");
+
+.btn.btn-#{map-get($botao,name)}{
+	background: red;
+}
+// .btn.btn-danger{
+// 	color: white;
+// 	background: red;
+// }
+
+$colors : "green", "red","blue", "pink";
+@each $color in $colors{
+	.btn.#{$color}{
+		color: #{$color};
+	}
+}
+
+@mixin prefixers($propriedade,$valor){
+	-webkit-#{$propriedade}: #{$valor};
+	-moz-#{$propriedade}: #{$valor};
+	-ms-#{$propriedade}: #{$valor};
+	-o-#{$propriedade}: #{$valor};
+	#{$propriedade}: #{$valor};
+}
+
+.botao{
+	@include prefixers(border-radius, "4px");
+}
+
+.sidebar{
+	@include prefixers(transition, "all 0s 1s ease-in")
+}
