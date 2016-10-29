@@ -4,12 +4,17 @@
   "description": "",
   "main": "",
   "scripts": {
+    "watchScript": "watchify js/script.js -t babelify -o js/bundle.js",
     "start": "browser-sync start --server --files css/*.css,*.html, js/*.js ",
     "sass": "sass --watch sass:css"
   },
   "author": "7",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.17.3"
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.17.3",
+    "watchify": "^3.7.0"
   }
 }

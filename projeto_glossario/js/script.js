@@ -1,11 +1,5 @@
-// SElecionar o botao
-var botao = document.querySelector('#btnAbrirSidebar');
+import Formulario from "./components/Formulario";
 
-// Criar o metodo que abre o sidebar
-function abrirSidebar(){
-	var sidebar = document.querySelector('#sidebar');
-	sidebar.classList.add("active");
-}
-
-// Adicionar o metodo no evento
-botao.onclick = abrirSidebar;
+var umformulario = new Formulario("#cadastro",function(validou){
+	console.log(validou);
+});

@@ -210,3 +210,10 @@ table {
   transition: all 0s 1s ease-in; }
 
 /*# sourceMappingURL=styles.css.map */
+
+.form-group.erro label{
+  color: red;
+}
+.form-group.erro input{
+  border: solid 1px red;
+}

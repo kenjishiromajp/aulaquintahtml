@@ -80,6 +80,21 @@
 		</tbody>
 	</table>
 
-	<script src="js/script.js"></script>
+	<form id="cadastro" action="cadastrar">
+		<fieldset>
+			<h3>INFORMAÇÕES PESSOAIS</h3>
+			<div class="form-group required is-number is-string">
+				<label for="nome">NOME</label>
+				<input id="nome" type="text" name="nome" />
+			</div>
+			<div class="form-group">
+				<label for="telefone">TELEFONE</label>
+				<input id="telefone" type="text" name="telefone" />
+			</div>
+			<button type="submit">CADASTRAR!</button>
+		</fieldset>
+	</form>
+
+	<script src="js/bundle.js"></script>
 </body>
 </html>
